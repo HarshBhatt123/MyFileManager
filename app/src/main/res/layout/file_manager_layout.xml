@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="File Manager"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            android:text="Back" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_purple"
+            android:layout_weight="4"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="path"
+            android:textSize="15sp"
+            android:id="@+id/pathOutput"/>
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/refresh"
+            android:text="refresh" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lv"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/copy"
+            android:text="Copy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/paste"
+            android:layout_width="0dp"
+            android:text="Paste"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/copy"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+</LinearLayout>
